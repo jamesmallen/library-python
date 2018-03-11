@@ -12,11 +12,7 @@ class NutritionixClient:
     def __init__(self, application_id=None, api_key=None, debug=False, *arg, **kwarg):
         self.APPLICATION_ID = application_id
         self.API_KEY = api_key
-        self.DEBUG = False
-
-        if debug == True:
-            self.DEBUG = debug
-            logging.basicConfig(level=logging.DEBUG)
+        self.DEBUG = debug
 
     def get_api_version(self, *arg):
         return API_VERSION
