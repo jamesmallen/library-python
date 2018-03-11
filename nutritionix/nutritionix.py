@@ -1,7 +1,7 @@
 import logging
 import json
 import requests
-import urlparse
+from six.moves.urllib import parse as urlparse
 
 API_VERSION = "v2"
 BASE_URL = "https://api.nutritionix.com/%s/" % (API_VERSION)
